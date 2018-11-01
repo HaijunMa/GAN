@@ -1,5 +1,6 @@
 # GAN初学习demo
-引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks（https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf），这篇paper算是这个领域的开山之作。
+-------------------------------------------------------------------------------------------------------------------------------
+ >>引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks（https://papers.nips.cc/paper/5423-generative-adversarial->>nets.pdf），这篇paper算是这个领域的开山之作。
 
 最新的一篇paper：https://arxiv.org/abs/1701.00160
 
