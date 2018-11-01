@@ -2,12 +2,12 @@
 -------------------------------------------------------------------------------------------------------------------------------
  >>引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks（https://papers.nips.cc/paper/5423-generative-adversarial->>nets.pdf），这篇paper算是这个领域的开山之作。
 
-最新的一篇paper：https://arxiv.org/abs/1701.00160
+>>最新的一篇paper：https://arxiv.org/abs/1701.00160
 
-Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：
-Paper：https://arxiv.org/abs/1511.06434
+>>Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：
+>>Paper：https://arxiv.org/abs/1511.06434
 
-##（1）GAN模型：
+（1）GAN模型：
 GAN，即生成对抗网络，主要包含两个模块：
 生成器（Generative Model）
 判别器（Discriminative Model）
