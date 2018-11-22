@@ -1,15 +1,20 @@
 # GAN初学习
 
- >> 引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks（https://papers.nips.cc/paper/5423-generative-adversarial- nets.pdf），这篇paper算是这个领域的开山之作。
+ >>引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks
+ [(Generative Adversarial Networks)](https://arxiv.org/abs/1406.2661)，这篇paper算是这个领域的开山之作、鼻祖。
 
 >> 最新的一篇paper：https://arxiv.org/abs/1701.00160
 
->> Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：
+>> Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：Paper：https://arxiv.org/abs/1511.06434
 
->> Paper：https://arxiv.org/abs/1511.06434
+ >> 生成对抗网络采用`无监督学习`的方式，自动从源数据中进行学习，在不需要人工对数据集进行标记的情况下就可以产生令人惊叹的结果。
+  从维基百科的词条学习专业知识，然后写出一个令普通人可以理解的科普文章，模仿知名画家的作品并学习他们的风格进行再创作，这种看
+  似只有人类这样拥有智能和创造性的物种才会做的事情，机器学习现在真的可以做到了！
+
+## （1）GAN的原理介绍：
 
 
-### （1）GAN模型：
+## （2）GAN模型：
 
 GAN，即生成对抗网络，主要包含两个模块：
 
@@ -23,7 +28,7 @@ GAN，即生成对抗网络，主要包含两个模块：
     这里，重点要讲解一下输入 vector。输入向量是用来做什么的呢？其实，输入 vector 中的每一维度都可以代表输出图片的某个特征。比如说，输入 vector 的第一个维度数值大小可以调节生成图片的头发颜色，数值大一些是红色，数值小一些是黑色；输入 vector 的第二个维度数值大小可以调节生成图片的肤色；输入 vector 的第三个维度数值大小可以调节生成图片的表情情绪，等等。
     GAN 的强大之处也正是在于此，通过调节输入 vector，就可以生成具有不同特征的图片。而这些生成的图片不是真实样本集里有的，而是即合理而又没有见过的图片。是不是很有意思呢？下面这张图反映的是不同的 vector 生成不同的图片。
 
-### （2）GAN算法原理：
+## （3）GAN算法原理：
 
     GAN 的算法原理。既然有两个模块：G 和 D，每个模块都有相应的网络参数。先来看 D 模块，它的目标是让真实样本 score 越大越好，让 G 产生的样本 score 越小越好。那么可以得到 D 的损失函数为：
     其中，x 是真实样本，G(z) 是 G 生成样本。我们希望 D(x) 越大越好，D(G(z)) 越小越好，也就是希望 -D(x) 越小越好，-log(1-D(G(z))) 越小越好。从损失函数的角度来说，能够得到上式。
@@ -31,7 +36,7 @@ GAN，即生成对抗网络，主要包含两个模块：
     知道了损失函数之后，接下来就可以使用各种优化算法来训练模型了。
 
 
-### （3）GAN模型实例
+## （4）GAN模型实例
 
     基于PyTorch 实现一个简单的 GAN 模型。仍然以绘画创作为例，假设我们要创造如下“名画”（以正弦图形为例）：
     
@@ -47,9 +52,9 @@ GAN，即生成对抗网络，主要包含两个模块：
     
    #### demo安装环境
    
-   - 环境：win10 + Anaconda + pycharm
+   - `环境`：win10 + Anaconda + pycharm
    
-   - 安装的库：pytorch、numpy、matplotlib
+   - `安装的库`：pytorch、numpy、matplotlib
    
    ## 下载
    
