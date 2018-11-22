@@ -1,16 +1,22 @@
 # GAN初学习
 
- >>引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks
+
+ >>>引入的第一篇paper是Ian Goodfellow大牛的Generative Adversarial Networks
  [(Generative Adversarial Networks)](https://arxiv.org/abs/1406.2661)，这篇paper算是这个领域的开山之作、鼻祖。
 
->> 最新的一篇paper：https://arxiv.org/abs/1701.00160
+>>> 最新的一篇paper：https://arxiv.org/abs/1701.00160
 
->> Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：Paper：https://arxiv.org/abs/1511.06434
+>>> Alec Radford、Luke Metz和Soumith Chintala等人的论文，介绍了本教程中我们在生成器上使用的复杂GANs的基本结构：Paper：https://arxiv.org/abs/1511.06434
+
+
+
 
  >  **``生成对抗网络采用`无监督学习`的方式，自动从源数据中进行学习，在不需要人工对数据集进行标记的情况下就可以
  产生令人惊叹的结果。从维基百科的词条学习专业知识，然后写出一个令普通人可以理解的科普文章，模仿知名画家的作品
  并学习他们的风格进行再创作，这种看似只有人类这样拥有智能和创造性的物种才会做的事情，机器学习现在真的可以做到
  了！``**
+
+
 
 ## （1）GAN的原理介绍：
 
