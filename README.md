@@ -35,5 +35,22 @@ GAN，即生成对抗网络，主要包含两个模块：
 
     基于PyTorch 实现一个简单的 GAN 模型。仍然以绘画创作为例，假设我们要创造如下“名画”（以正弦图形为例）：
     
+  ####  demo图片
+  
+  - 迭代500次输出结果：
+  
+ ![image](https://github.com/HaijunMa/GAN/raw/master/image/2.png)
+ 
+ - 迭代1000次输出结果：
+ 
+ ![image](https://github.com/HaijunMa/GAN/raw/master/image/1.png)
+    
+   #### demo安装环境
+   
    - 环境：win10 + Anaconda + pycharm
+   
    - 安装的库：pytorch、numpy、matplotlib
+   
+   ## 下载
+   
+          git clone https://github.com/HaijunMa/GAN.git
